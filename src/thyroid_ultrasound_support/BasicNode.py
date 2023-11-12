@@ -5,13 +5,15 @@ File containing the code for a basic node that allows logging of messages.
 """
 
 # Import standard ROS packages
-from rospy import init_node, spin, Rate, Subscriber, is_shutdown, Publisher, get_name
+from rospy import init_node, spin, Rate, Subscriber, is_shutdown, Publisher, get_name, on_shutdown
+from std_msgs.msg import Bool, Float64
 
 # Import custom ROS packages
 from thyroid_ultrasound_messages.msg import log_message
 
 # Import custom python packages
 from thyroid_ultrasound_support.LoggingConstants import *
+from thyroid_ultrasound_support.TopicNames import *
 
 
 class BasicNode:
