@@ -5,8 +5,8 @@ File containing the code for a basic node that allows logging of messages.
 """
 
 # Import standard ROS packages
-from rospy import init_node, spin, Rate, Subscriber, is_shutdown, Publisher, get_name, on_shutdown
-from std_msgs.msg import Bool, Float64
+from rospy import init_node, spin, Rate, Subscriber, is_shutdown, Publisher, get_name, on_shutdown, Time
+from std_msgs.msg import Bool, Float64, String
 
 # Import custom ROS packages
 from thyroid_ultrasound_messages.msg import log_message
@@ -20,7 +20,7 @@ class BasicNode:
     def __init__(self):
 
         # Define a common publisher to send the log messages
-        self.logger = Publisher('/system/logging', log_message, queue_size=1)
+        self.logger = Publisher(LOGGING, log_message, queue_size=1)
 
     def log_single_message(self, message: str, verbosity: int):
 

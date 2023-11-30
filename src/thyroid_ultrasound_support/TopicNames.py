@@ -16,17 +16,36 @@ REGISTERED_DATA: str = 'registered_data'
 
 # Image related topics
 IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
-IS_IMAGE_EMPTY: str = '/image_data/status/is_image_empty'
+IMAGE_PATIENT_CONTACT: str = '/image_data/status/is_patient_in_image'
 IMAGE_RAW: str = '/image_data/raw'
 IMAGE_FILTERED: str = '/image_data/filtered'
+IMAGE_DEPTH: str = '/image_data/imaging_depth'
 
 # Commands
 USE_IMAGE_FEEDBACK: str = '/command/use_image_feedback'
 USE_POSE_FEEDBACK: str = '/command/use_pose_feedback'
 USE_FORCE_FEEDBACK: str = '/command/use_force_feedback'
+
 CREATE_TRAJECTORY: str = '/command/create_trajectory'
 CLEAR_TRAJECTORY: str = '/command/clear_trajectory'
+COMPLETE_FULL_SCAN: str = '/command/complete_full_scan'
+
+CROP_IMAGE_FROM_POINTS: str = '/command/generate_new_image_cropping'
+CROP_IMAGE_FROM_TEMPLATE: str = '/command/load_existing_image_cropping'
+
+IDENTIFY_THYROID_FROM_POINTS: str = '/command/identify_thyroid_from_points'
+IDENTIFY_THYROID_FROM_TEMPLATE: str = '/command/identify_thyroid_from_template'
+
+GENERATE_THRESHOLD_PARAMETERS: str = '/command/generate_threshold_parameters'
+
+IMAGE_STREAMING_CONTROL: str = '/command/image_streaming_control'
+IMAGE_STREAMING_RESTART: str = '/command/restart_image_streaming'
+
 FILTER_IMAGES: str = '/command/filter_images'
+
+GENERATE_VOLUME: str = '/command/generate_volume'
+DISPLAY_VOLUME: str = '/command/display_volume'
+
 
 # Image-based user input
 IMAGE_CROP_COORDINATES: str = '/ib_ui/image_crop_coordinates'
@@ -63,6 +82,18 @@ RC_IMAGE_IN_USE: str = '/image_control/in_use'
 RC_IMAGE_CONTROL_INPUT_EE: str = '/image_control/control_input_ee'
 RC_IMAGE_CONTROL_INPUT_O: str = '/image_control/control_input_O'
 
+# Robot control - patient contact control information
+RC_PATIENT_CONTACT_ERROR: str = '/patient_contact/error'
+RC_PATIENT_CONTACT_IN_USE: str = '/patient_contact/in_use'
+RC_PATIENT_CONTACT_CONTROL_INPUT_EE: str = '/patient_contact/control_input_ee'
+RC_PATIENT_CONTACT_CONTROL_INPUT_O: str = '/patient_contact/control_input_o'
+
+# System Information
+LOGGING: str = '/system/logging'
+
+# Development Channel
+SAVE_IMAGES: str = '/developer/save_images'
+SAVED_IMAGES_DESTINATION: str = '/developer/saved_images_destination'
 
 
 
