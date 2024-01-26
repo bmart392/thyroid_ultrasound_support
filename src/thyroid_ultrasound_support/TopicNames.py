@@ -15,11 +15,15 @@ ROBOT_DERIVED_FORCE: str = '/robot_data/cleaned_force'
 REGISTERED_DATA: str = 'registered_data'
 
 # Image related topics
-IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
-IMAGE_PATIENT_CONTACT: str = '/image_data/status/is_patient_in_image'
+IMAGE_SOURCE: str = '/image_data/source'
 IMAGE_RAW: str = '/image_data/raw'
+IMAGE_SKIN_APPROXIMATION: str = '/image_data/skin_approximation'
+IMAGE_CROPPED: str = '/image_data/cropped'
 IMAGE_FILTERED: str = '/image_data/filtered'
+IMAGE_PATIENT_CONTACT: str = '/image_data/status/is_patient_in_image'
+IMAGE_ROI_SHOWN: str = '/image_data/status/region_of_interest_shown'
 IMAGE_DEPTH: str = '/image_data/imaging_depth'
+IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
 
 # Commands
 USE_IMAGE_FEEDBACK: str = '/command/use_image_feedback'

@@ -15,6 +15,11 @@ from thyroid_ultrasound_messages.msg import log_message
 from thyroid_ultrasound_support.LoggingConstants import *
 from thyroid_ultrasound_support.TopicNames import *
 
+# Define levels of verbosity
+SHORT: int = int(0)
+LONG: int = int(3)
+EXTRA_LONG: int = int(5)
+
 
 class BasicNode:
     def __init__(self):
