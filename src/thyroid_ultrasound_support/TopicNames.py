@@ -22,6 +22,7 @@ IMAGE_CROPPED: str = '/image_data/cropped'
 IMAGE_FILTERED: str = '/image_data/filtered'
 IMAGE_PATIENT_CONTACT: str = '/image_data/status/is_patient_in_image'
 IMAGE_ROI_SHOWN: str = '/image_data/status/region_of_interest_shown'
+IMAGE_ROI_CENTERED: str = '/image_data/status/region_of_interest_centered'
 IMAGE_DEPTH: str = '/image_data/imaging_depth'
 IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
 
@@ -94,6 +95,7 @@ RC_PATIENT_CONTACT_CONTROL_INPUT_O: str = '/patient_contact/control_input_o'
 
 # System Information
 LOGGING: str = '/system/logging'
+STATUS: str = '/system/node_status'
 
 # Development Channel
 SAVE_IMAGES: str = '/developer/save_images'

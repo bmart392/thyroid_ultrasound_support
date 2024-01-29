@@ -13,6 +13,8 @@ from thyroid_ultrasound_messages.msg import log_message
 
 # Import custom python packages
 from thyroid_ultrasound_support.LoggingConstants import *
+from thyroid_ultrasound_support.NodeStatusConstants import *
+from thyroid_ultrasound_support.NodeNameConstants import *
 from thyroid_ultrasound_support.TopicNames import *
 
 # Define levels of verbosity
@@ -23,20 +25,38 @@ EXTRA_LONG: int = int(5)
 
 class BasicNode:
     def __init__(self):
-
         # Define a common publisher to send the log messages
         self.logger = Publisher(LOGGING, log_message, queue_size=1)
 
+        # Define a common publisher to send node status messages
+        self.status_publisher = Publisher(STATUS, log_message, queue_size=1)
+
     def log_single_message(self, message: str, verbosity: int):
+        """
+        Publish a new log message from the node.
 
-        # Create a new log message
-        message_to_send = log_message()
+        Parameters
+        ----------
+        message :
+            A string to send as the log message.
+        verbosity :
+            The level of verbosity at which the message should be displayed.
+        """
+        # Create and publish a new log message with the proper fields
+        self.logger.publish(log_message(message=message,
+                                        verbosity=verbosity,
+                                        source=get_name()))
 
-        # Fill in the fields in the message to send
-        message_to_send.message = message
-        message_to_send.verbosity = verbosity
-        message_to_send.source = get_name()
+    def publish_node_status(self, new_status: str):
+        """
+        Publish a new status for the node. Status messages are sent using the log_message format.
 
-        # Publish the new message
-        self.logger.publish(message_to_send)
-
+        Parameters
+        ----------
+        new_status :
+            The new status of the node that should be published.
+        """
+        # Create and publish a new status message with the proper fields
+        self.status_publisher.publish(log_message(message=new_status,
+                                                  verbosity=NO_VERBOSITY,
+                                                  source=get_name()))
