@@ -66,6 +66,9 @@ P_GAIN_CURRENT: str = '/tuning/current/p_gain'
 I_GAIN_CURRENT: str = '/tuning/current/i_gain'
 D_GAIN_CURRENT: str = '/tuning/current/d_gain'
 
+# Robot control - general
+RC_OVERALL_ROBOT_SPEED: str = '/robot_control/overall_speed_factor'
+
 # Robot control - force control information
 RC_FORCE_SET_POINT: str = '/force_control/set_point'
 RC_FORCE_ERROR: str = '/force_control/error'

@@ -11,3 +11,8 @@ IMAGE_BASED_USER_INPUT: str = 'ImageBasedUserInput'
 REAL_TIME_IMAGE_FILTER: str = 'RealTimeImageFilter'
 VISUALIZER: str = 'Visualizer'
 IMAGE_POSITIONING_CONTROLLER: str = 'ImagePositioningController'
+
+TRANSFORMATION_CREATION: str = 'TransformationCreation'
+ROBOT_CONTROL: str = 'RobotControl'
+
+CONTROLLER_TUNING_GRAPHS: str = 'ControllerTuningGraphs'
