@@ -30,6 +30,7 @@ IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
 USE_IMAGE_FEEDBACK: str = '/command/use_image_feedback'
 USE_POSE_FEEDBACK: str = '/command/use_pose_feedback'
 USE_FORCE_FEEDBACK: str = '/command/use_force_feedback'
+USE_BALANCING_FEEDBACK: str = '/command/use_balance_feedback'
 
 CREATE_TRAJECTORY: str = '/command/create_trajectory'
 CLEAR_TRAJECTORY: str = '/command/clear_trajectory'
@@ -45,8 +46,6 @@ GENERATE_THRESHOLD_PARAMETERS: str = '/command/generate_threshold_parameters'
 
 IMAGE_STREAMING_CONTROL: str = '/command/image_streaming_control'
 IMAGE_STREAMING_RESTART: str = '/command/restart_image_streaming'
-
-FILTER_IMAGES: str = '/command/filter_images'
 
 GENERATE_VOLUME: str = '/command/generate_volume'
 DISPLAY_VOLUME: str = '/command/display_volume'
