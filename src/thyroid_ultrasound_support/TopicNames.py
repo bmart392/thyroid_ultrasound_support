@@ -32,8 +32,8 @@ USE_POSE_FEEDBACK: str = '/command/use_pose_feedback'
 USE_FORCE_FEEDBACK: str = '/command/use_force_feedback'
 USE_BALANCING_FEEDBACK: str = '/command/use_balance_feedback'
 
-CREATE_TRAJECTORY: str = '/command/create_trajectory'
-CLEAR_TRAJECTORY: str = '/command/clear_trajectory'
+CREATE_TRAJECTORY: str = '/command/trajectory/create'
+CLEAR_TRAJECTORY: str = '/command/trajectory/clear'
 COMPLETE_FULL_SCAN: str = '/command/complete_full_scan'
 
 CROP_IMAGE_FROM_POINTS: str = '/command/generate_new_image_cropping'
