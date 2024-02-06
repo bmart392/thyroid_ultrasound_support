@@ -103,6 +103,9 @@ STATUS: str = '/system/node_status'
 SAVE_IMAGES: str = '/developer/save_images'
 SAVED_IMAGES_DESTINATION: str = '/developer/saved_images_destination'
 
+# Experiment Channels
+EXP_SAVE_DATA_COMMAND: str = '/experiment/save_data_command'
+
 
 
 

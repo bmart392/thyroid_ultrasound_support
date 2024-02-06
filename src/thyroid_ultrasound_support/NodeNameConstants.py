@@ -16,3 +16,5 @@ TRANSFORMATION_CREATION: str = 'TransformationCreation'
 ROBOT_CONTROL: str = 'RobotControl'
 
 CONTROLLER_TUNING_GRAPHS: str = 'ControllerTuningGraphs'
+
+EXPERIMENT_DATA_RECORDER: str = 'ExperimentDataRecorder'
