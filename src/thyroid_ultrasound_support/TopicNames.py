@@ -104,8 +104,9 @@ SAVE_IMAGES: str = '/developer/save_images'
 SAVED_IMAGES_DESTINATION: str = '/developer/saved_images_destination'
 
 # Experiment Channels
-EXP_SAVE_DATA_COMMAND: str = '/experiment/save_data_command'
-
+EXP_SAVE_DATA_COMMAND: str = '/experiment/command/save_data'
+EXP_CREATE_NOISE_COMMAND: str = '/experiment/command/create_noise'
+EXP_NOISE_VELOCITIES: str = '/experiment/noise_velocities'
 
 
 

@@ -18,3 +18,4 @@ ROBOT_CONTROL: str = 'RobotControl'
 CONTROLLER_TUNING_GRAPHS: str = 'ControllerTuningGraphs'
 
 EXPERIMENT_DATA_RECORDER: str = 'ExperimentDataRecorder'
+EXPERIMENT_NOISE_MAKER: str = 'ExperimentNoiseMaker'
