@@ -12,7 +12,6 @@ ROBOT_CONTROL_INPUT: str = '/arm/cartesian/velocity'
 # Robot derived information
 ROBOT_DERIVED_POSE: str = '/O_T_EE'
 ROBOT_DERIVED_FORCE: str = '/robot_data/cleaned_force'
-REGISTERED_DATA: str = 'registered_data'
 
 # Image related topics
 IMAGE_SOURCE: str = '/image_data/source'
@@ -25,6 +24,15 @@ IMAGE_ROI_SHOWN: str = '/image_data/status/region_of_interest_shown'
 IMAGE_ROI_CENTERED: str = '/image_data/status/region_of_interest_centered'
 IMAGE_DEPTH: str = '/image_data/imaging_depth'
 IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
+
+# Registered data topics
+REGISTERED_DATA_SAVE_LOCATION: str = '/registered_data/save_location'
+REGISTERED_DATA_LOAD_LOCATION: str = '/registered_data/load_location'
+REGISTERED_DATA_NON_REAL_TIME: str = '/registered_data/non_real_time'
+REGISTERED_DATA_REAL_TIME: str = '/registered_data/real_time'
+
+# Volume data topics
+VOLUME_DATA_SAVE_LOCATION: str = '/volume_data/save_location'
 
 # Commands
 USE_IMAGE_FEEDBACK: str = '/command/use_image_feedback'
