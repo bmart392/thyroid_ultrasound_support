@@ -60,6 +60,9 @@ IMAGE_STREAMING_RESTART: str = '/command/restart_image_streaming'
 GENERATE_VOLUME: str = '/command/generate_volume'
 DISPLAY_VOLUME: str = '/command/display_volume'
 
+STOP_ALL_MOTION: str = '/command/stop_motion'
+TEST_FORCE_PROFILE: str = '/command/test_force_profile'
+
 
 # Image-based user input
 IMAGE_CROP_COORDINATES: str = '/ib_ui/image_crop_coordinates'
