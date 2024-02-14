@@ -26,13 +26,15 @@ IMAGE_DEPTH: str = '/image_data/imaging_depth'
 IMAGE_TRANSFORMED_POINTS: str = '/image_data/results/transformed_points'
 
 # Registered data topics
-REGISTERED_DATA_SAVE_LOCATION: str = '/registered_data/save_location'
-REGISTERED_DATA_LOAD_LOCATION: str = '/registered_data/load_location'
-REGISTERED_DATA_NON_REAL_TIME: str = '/registered_data/non_real_time'
-REGISTERED_DATA_REAL_TIME: str = '/registered_data/real_time'
+REGISTERED_DATA_SAVE_LOCATION: str = '/registered_data/real_time/save_location'
+REGISTERED_DATA_LOAD_LOCATION: str = '/registered_data/non_real_time/load_location'
+REGISTERED_DATA_NON_REAL_TIME: str = '/registered_data/non_real_time/data'
+REGISTERED_DATA_REAL_TIME: str = '/registered_data/real_time/data'
+REGISTERED_DATA_NON_REAL_TIME_SEGMENTATION_PROGRESS: str = '/registered_data/non_real_time/segmentation_progress'
 
 # Volume data topics
 VOLUME_DATA_SAVE_LOCATION: str = '/volume_data/save_location'
+VOLUME_DATA: str = '/volume_data/data'
 
 # Commands
 USE_IMAGE_FEEDBACK: str = '/command/use_image_feedback'

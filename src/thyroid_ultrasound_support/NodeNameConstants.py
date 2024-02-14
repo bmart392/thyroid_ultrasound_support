@@ -13,6 +13,7 @@ VISUALIZER: str = 'Visualizer'
 IMAGE_POSITIONING_CONTROLLER: str = 'ImagePositioningController'
 IMAGE_POSITION_REGISTRATION: str = 'ImagePositionRegistration'
 NON_REAL_TIME_IMAGE_FILTER: str = 'NonRealTimeImageFilter'
+VOLUME_GENERATION: str = 'VolumeGeneration'
 
 TRANSFORMATION_CREATION: str = 'TransformationCreation'
 ROBOT_CONTROL: str = 'RobotControl'
