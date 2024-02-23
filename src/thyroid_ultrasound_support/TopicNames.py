@@ -95,6 +95,7 @@ RC_POSITION_ERROR: str = '/position_control/error'
 RC_POSITION_IN_USE: str = '/position_control/in_use'
 RC_POSITION_CONTROL_INPUT_EE: str = '/position_control/control_input_ee'
 RC_POSITION_CONTROL_INPUT_O: str = '/position_control/control_input_O'
+RC_TRAJECTORY_COMPLETE: str = '/position_control/trajectory_complete'
 
 # Robot control - image control information
 RC_IMAGE_ERROR: str = '/image_control/distance_to_centroid'
@@ -107,6 +108,9 @@ RC_PATIENT_CONTACT_ERROR: str = '/patient_contact/error'
 RC_PATIENT_CONTACT_IN_USE: str = '/patient_contact/in_use'
 RC_PATIENT_CONTACT_CONTROL_INPUT_EE: str = '/patient_contact/control_input_ee'
 RC_PATIENT_CONTACT_CONTROL_INPUT_O: str = '/patient_contact/control_input_o'
+
+# Robot control - user manual control
+RC_MANUAL_CONTROL_INPUT: str = '/manual_control_input'
 
 # System Information
 LOGGING: str = '/system/logging'
