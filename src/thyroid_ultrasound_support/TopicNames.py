@@ -6,6 +6,7 @@ Defines the names of topics used in the thyroid_ultrasound system.
 
 # Robot raw information
 ROBOT_STATE: str = '/franka_state_controller/franka_states'
+ARMER_STATE: str ='/arm/state'
 ROBOT_FORCE: str = '/franka_state_controller/F_ext'
 ROBOT_CONTROL_INPUT: str = '/arm/cartesian/velocity'
 
@@ -102,6 +103,7 @@ RC_IMAGE_ERROR: str = '/image_control/distance_to_centroid'
 RC_IMAGE_IN_USE: str = '/image_control/in_use'
 RC_IMAGE_CONTROL_INPUT_EE: str = '/image_control/control_input_ee'
 RC_IMAGE_CONTROL_INPUT_O: str = '/image_control/control_input_O'
+RC_IMAGE_CENTERING_SIDE: str = '/image_control/image_centering_side'
 
 # Robot control - patient contact control information
 RC_PATIENT_CONTACT_ERROR: str = '/patient_contact/error'
