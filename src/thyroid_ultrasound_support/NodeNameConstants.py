@@ -5,6 +5,7 @@ Defines constants used in naming each node.
 """
 
 CLARIUS_US_PUBLISHER: str = 'ClariusPublisher'
+CLARIUS_US_SPOOF: str = 'ClariusSpoof'
 IMAGE_DATA_CONVERTER: str = 'ImageDataConverter'
 IMAGE_CONTACT_BALANCING: str = 'ImageContactBalancing'
 IMAGE_BASED_USER_INPUT: str = 'ImageBasedUserInput'
@@ -16,9 +17,12 @@ NON_REAL_TIME_IMAGE_FILTER: str = 'NonRealTimeImageFilter'
 VOLUME_GENERATION: str = 'VolumeGeneration'
 
 TRANSFORMATION_CREATION: str = 'TransformationCreation'
+TRAJECTORY_MANAGEMENT: str = 'TrajectoryManagement'
 ROBOT_CONTROL: str = 'RobotControl'
 
 CONTROLLER_TUNING_GRAPHS: str = 'ControllerTuningGraphs'
 
 EXPERIMENT_DATA_RECORDER: str = 'ExperimentDataRecorder'
 EXPERIMENT_NOISE_MAKER: str = 'ExperimentNoiseMaker'
+
+USER_INTERFACE: str = 'UserInterface'
