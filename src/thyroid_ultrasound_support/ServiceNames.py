@@ -55,6 +55,7 @@ TM_OVERRIDE_IMAGE_CENTERED: str = '/trajectory_management/overrides/image_center
 TM_OVERRIDE_DATA_REGISTERED: str = '/trajectory_management/overrides/data_registered'
 
 TM_CREATE_TRAJECTORY: str = '/trajectory_management/command/create'
+TM_SET_TRAJECTORY_SPACING: str = '/trajectory_management/command/set_waypoint_spacing'
 TM_CLEAR_TRAJECTORY: str = '/trajectory_management/command/clear'
 
 TM_DATA_HAS_BEEN_REGISTERED: str = '/trajectory_management/data_has_been_registered'
@@ -71,10 +72,33 @@ NRTS_REGISTERED_DATA_LOAD_LOCATION: str = '/non_real_time_segmentation/registere
 NRTS_GENERATE_VOLUME: str = '/non_real_time_segmentation/generate_volume'
 
 # Volume generation node
+VG_REGISTERED_DATA_LOAD_LOCATION: str = '/volume_generation/registered_data_load_location'
 VG_GENERATE_VOLUME: str = '/volume_generation/generate_volume'
 VG_DISPLAY_VOLUME: str = '/volume_generation/display_volume'
 VG_VOLUME_DATA_SAVE_LOCATION: str = '/volume_generation/volume_data/save_location'
 VG_VOLUME_DATA_LOAD_LOCATION: str = '/volume_generation/volume_data/load_location'
+
+# Visualization node
+VIS_STATUS_SHOW_ORIGINAL: str = '/visualization/show_original'
+VIS_STATUS_SHOW_CROPPED: str = '/visualization/show_cropped'
+VIS_STATUS_SHOW_RECOLOR: str = '/visualization/show_recolored'
+VIS_STATUS_SHOW_BLUR: str = '/visualization/show_blurred'
+VIS_STATUS_SHOW_RESULT_MASK: str = '/visualization/show_result_mask'
+VIS_STATUS_SHOW_POST_PROCESSED_MASK: str = '/visualization/show_post_processed_mask'
+VIS_STATUS_SHOW_SURE_FOREGROUND: str = '/visualization/show_sure_foreground'
+VIS_STATUS_SHOW_SURE_BACKGROUND: str = '/visualization/show_sure_background'
+VIS_STATUS_SHOW_PROBABLE_FOREGROUND: str = '/visualization/show_probable_foreground'
+VIS_STATUS_SHOW_INITIALIZATION_MASK: str = '/visualization/show_initialization_mask'
+VIS_STATUS_SHOW_CENTROIDS_ONLY: str = '/visualization/show_centroids_only'
+VIS_STATUS_SHOW_CENTROIDS_CROSS_ONLY: str = '/visualization/show_centroids_cross_only'
+VIS_STATUS_SHOW_MASK_OVERLAY: str = '/visualization/show_mask_overlay'
+VIS_STATUS_SHOW_CENTROIDS_CROSS_OVERLAY: str = '/visualization/show_centroids_cross_overlay'
+VIS_STATUS_SHOW_MASK_CENTROIDS_CROSS_OVERLAY: str = '/visualization/show_mask_centroids_cross_overlay'
+VIS_STATUS_SHOW_FOREGROUND: str = '/visualization/show_foreground'
+VIS_STATUS_SHOW_SKIN_APPROXIMATION: str = '/visualization/show_skin_approximation'
+VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_0: str = '/visualization/show_grabcut_user_initialization_0'
+VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_1: str = '/visualization/show_grabcut_user_initialization_1'
+VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_3: str = '/visualization/show_grabcut_user_initialization_3'
 
 
 
