@@ -16,6 +16,7 @@ CS_IMAGE_LOCATION: str = '/image_streaming/path_to_images'
 CS_IMAGE_STREAMING_CONTROL: str = '/image_streaming/image_streaming_control'
 CS_IMAGE_STREAMING_RESTART: str = '/image_streaming/restart_image_streaming'
 CS_IMAGE_STREAMING_REVERSE_PLAYBACK_DIRECTION: str = '/image_streaming/reverse_playback_direction'
+CS_IMAGE_STREAMING_SET_FREQUENCY: str = '/image_streaming/set_frequency'
 
 # Image based user input
 IB_UI_CROP_IMAGE_FROM_POINTS: str = '/image_based_user_input/generate_new_image_cropping'
