@@ -24,9 +24,12 @@ IB_UI_CROP_IMAGE_FROM_TEMPLATE: str = '/image_based_user_input/load_existing_ima
 IB_UI_IDENTIFY_THYROID_FROM_POINTS: str = '/image_based_user_input/identify_thyroid_from_points'
 
 # Real-time segmentation
+RTS_NEWEST_IMAGE_DATA: str = '/real_time_segmentation/get_newest_image_data'
 RTS_UPDATE_IMAGE_CROP_COORDINATES: str = '/real_time_segmentation/update_image_crop_coordinates'
 RTS_UPDATE_INITIALIZATION_MASK: str = '/real_time_segmentation/update_initialization_mask'
 RTS_UPDATE_THRESHOLD_PARAMETERS: str = '/real_time_segmentation/update_threshold_parameters'
+RTS_SET_SEGMENTATION_PHASE: str = '/real_time_segmentation/set_segmentation_phase'
+RTS_HAS_SEGMENTATION_STABILIZED: str = '/real_time_segmentation/has_segmentation_stabilized'
 
 # Robot control
 RC_USE_POSE_CONTROL: str = '/robot_control/use/pose_control'
