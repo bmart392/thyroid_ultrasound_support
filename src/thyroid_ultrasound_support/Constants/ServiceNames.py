@@ -61,15 +61,24 @@ TM_OVERRIDE_DATA_REGISTERED: str = '/trajectory_management/overrides/data_regist
 TM_CREATE_TRAJECTORY: str = '/trajectory_management/command/create'
 TM_SET_TRAJECTORY_SPACING: str = '/trajectory_management/command/set_waypoint_spacing'
 TM_CLEAR_TRAJECTORY: str = '/trajectory_management/command/clear'
+TM_COMPLETE_TRAJECTORY_WITHOUT_DATA: str = '/trajectory_management/command/complete_trajectory_without_registering_data'
 
 TM_DATA_HAS_BEEN_REGISTERED: str = '/trajectory_management/data_has_been_registered'
+
+TM_CREATE_POSE_TRAJECTORY: str = '/trajectory_management/create_pose_trajectory'
+
+# High Level Motion Controller
+HLMC_SCAN_SINGLE_LOBE: str = '/high_level_motion_controller/scan_single_lobe'
 
 # Image-position registration
 IPR_REGISTER_NEW_DATA: str = '/image_position_registration/register_new_data'
 IPR_REGISTERED_DATA_SAVE_LOCATION: str = '/image_position_registration/data_save_location'
+IPR_SAVE_VALID_POSITIONS: str = '/image_position_registration/save_valid_positions'
+IPR_RETRIEVE_VALID_DATA: str = '/image_position_registration/retrieve_valid_data'
 
 # User interface
 UI_TRAJECTORY_COMPLETE: str = '/user_interface/trajectory_complete'
+UI_USER_FINISH_SCAN: str = '/user_interface/user_finish_scan'
 
 # Non-real-time segmentation
 NRTS_REGISTERED_DATA_LOAD_LOCATION: str = '/non_real_time_segmentation/registered_data_load_location'
@@ -103,6 +112,3 @@ VIS_STATUS_SHOW_SKIN_APPROXIMATION: str = '/visualization/show_skin_approximatio
 VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_0: str = '/visualization/show_grabcut_user_initialization_0'
 VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_1: str = '/visualization/show_grabcut_user_initialization_1'
 VIS_STATUS_SHOW_GRABCUT_USER_INITIALIZATION_3: str = '/visualization/show_grabcut_user_initialization_3'
-
-
-

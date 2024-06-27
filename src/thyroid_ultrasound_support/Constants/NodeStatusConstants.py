@@ -7,8 +7,39 @@ Defines constants used in sending and receiving node statuses messages.
 # Define expected verbosity level for all node statuses
 NO_VERBOSITY: int = int(255)
 
-# Image Filtering Node
-SEGMENTATION_INACTIVE: str = 'Not cropping, not filtering'
-SEGMENTATION_CROPPING: str = 'Cropping, not filtering'
-SEGMENTATION_FILTERING: str = 'Cropping, filtering'
-SEGMENTATION_UNKNOWN: str = 'Unknown state reached'
+# General
+INITIALIZING: str = 'Node initializing'
+INITIALIZED: str = 'Node initialized'
+WAITING: str = 'Node waiting'
+IMAGES_AVAILABLE: str = 'Images available'
+NO_IMAGES_AVAILABLE: str = 'No images available'
+
+# Experiment Stream Recorded Data Node
+STREAMING_ACTIVE: str = 'Streaming active'
+STREAMING_INACTIVE: str = 'Streaming inactive'
+ALL_IMAGES_STREAMED: str = 'All images streamed'
+
+# Image Based User Input Node
+LOADING_CROP_COORDINATES: str = 'Loading crop coordinates'
+GENERATING_CROP: str = 'Generating crop coordinates'
+GENERATING_INITIALIZATION: str = 'Generating initialization mask'
+GENERATING_THRESHOLD: str = 'Generating threshold parameters'
+GENERATING_GROUND_TRUTH: str = 'Generating ground truth mask'
+
+# Image Contact Balance Node
+PATIENT_IN_CONTACT: str = 'Patient in contact'
+CALCULATING_BALANCE_ERROR: str = 'Calculating balance error'
+BALANCE_ERROR_CALCULATED: str = 'Balance error calculated'
+CONTACT_TOO_UNEVEN: str = 'Contact is too uneven'
+PATIENT_NOT_IN_CONTACT: str = 'Patient not in contact'
+
+# Real Time Image Filter Node
+NOT_READY_TO_FILTER: str = 'Not ready to filter'
+UPDATING_FILTER_INITIALIZATION_MASK: str = 'Updating filter with new initialization mask'
+ANALYZING_IMAGE: str = 'Analyzing Image'
+
+# Trajectory Management Node
+ROBOT_POSE_UNKNOWN: str = 'Robot pose is not known'
+NO_TRAJECTORY_EXISTS: str = 'No trajectory exists'
+WAYPOINT_NOT_REACHED: str = 'Waypoint not reached'
+WAYPOINT_REACHED: str = 'Waypoint reached'

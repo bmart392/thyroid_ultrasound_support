@@ -67,7 +67,9 @@ class BasicNode:
         new_status :
             The new status of the node that should be published.
         delay_publishing :
-            The amount of time in seconds to delay before publishing the default status. If none is
+            The amount of time in seconds to delay before publishing the default status.
+        default_status :
+            The status to publish if the publishing delay has been met
         """
         # Define a variable to store the status message that will be published
         status_to_publish = None
@@ -78,13 +80,12 @@ class BasicNode:
 
         # Otherwise check if the default status should be sent
         elif self.time_of_last_publishing is not None and \
-            delay_publishing is not None and default_status is not None and \
-            Time.now() - self.time_of_last_publishing > Duration(secs=0, nsecs=delay_publishing*10**9):
+                delay_publishing is not None and default_status is not None and \
+                Time.now() - self.time_of_last_publishing > Duration(secs=0, nsecs=delay_publishing * 10 ** 9):
             status_to_publish = default_status
 
         # If there is a status to publish
         if status_to_publish is not None:
-
             # Create and publish a new status message with the proper fields
             temp_msg = log_message(message=status_to_publish,
                                    verbosity=NO_VERBOSITY,
