@@ -14,6 +14,11 @@ WAITING: str = 'Node waiting'
 IMAGES_AVAILABLE: str = 'Images available'
 NO_IMAGES_AVAILABLE: str = 'No images available'
 
+# Clarius Ultrasound Connection Node
+IMAGE_FROZEN_NOT_SAVING_IMAGES: str = 'Image frozen, not saving images'
+SENDING_IMAGES_NOT_SAVING_IMAGES: str = 'Image not frozen, not saving images'
+SENDING_IMAGES_SAVING_IMAGES: str = 'Image not frozen, saving images'
+
 # Experiment Stream Recorded Data Node
 STREAMING_ACTIVE: str = 'Streaming active'
 STREAMING_INACTIVE: str = 'Streaming inactive'
@@ -32,6 +37,10 @@ CALCULATING_BALANCE_ERROR: str = 'Calculating balance error'
 BALANCE_ERROR_CALCULATED: str = 'Balance error calculated'
 CONTACT_TOO_UNEVEN: str = 'Contact is too uneven'
 PATIENT_NOT_IN_CONTACT: str = 'Patient not in contact'
+
+# Visualization Node
+NO_VISUALIZATIONS_ACTIVE: str = 'No visualizations active'
+VISUALIZING_IMAGES: str = 'Visualizing images'
 
 # Real Time Image Filter Node
 NOT_READY_TO_FILTER: str = 'Not ready to filter'
