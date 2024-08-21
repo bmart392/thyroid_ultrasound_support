@@ -47,6 +47,11 @@ NOT_READY_TO_FILTER: str = 'Not ready to filter'
 UPDATING_FILTER_INITIALIZATION_MASK: str = 'Updating filter with new initialization mask'
 ANALYZING_IMAGE: str = 'Analyzing Image'
 
+# Image Positioning Controller Node
+CALCULATED_USING_COMPOSITE_CENTROID: str = 'Calculating using composite centroid'
+CALCULATED_USING_SINGLE_CENTROID: str = 'Calculating using single centroid'
+ERROR_ACCESSING_CENTROIDS: str = 'Error accessing centroids'
+
 # Trajectory Management Node
 ROBOT_POSE_UNKNOWN: str = 'Robot pose is not known'
 NO_TRAJECTORY_EXISTS: str = 'No trajectory exists'
