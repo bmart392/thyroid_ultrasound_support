@@ -52,6 +52,16 @@ CALCULATED_USING_COMPOSITE_CENTROID: str = 'Calculating using composite centroid
 CALCULATED_USING_SINGLE_CENTROID: str = 'Calculating using single centroid'
 ERROR_ACCESSING_CENTROIDS: str = 'Error accessing centroids'
 
+# Image Position Registration Node
+WAITING_FOR_FILTERED_IMAGE: str = 'Waiting for filtered image for registration'
+WAITING_FOR_FILTERED_IMAGE_FOR_SAVING_VALID_POSITION: str = 'Waiting for filtered image for valid pose'
+WAITING_FOR_ROBOT_POSE: str = 'Waiting for robot pose'
+WAITING_FOR_FORCE_READING: str = 'Waiting for force reading'
+SEARCHING_FOR_MATCHING_DATA: str = 'Searching for matching data'
+MATCHING_DATA_FOUND: str = 'Matching data found'
+REGISTERING_NEW_DATA: str = 'Registering new data'
+SAVING_VALID_POSE: str = 'Saving valid pose'
+
 # Trajectory Management Node
 ROBOT_POSE_UNKNOWN: str = 'Robot pose is not known'
 NO_TRAJECTORY_EXISTS: str = 'No trajectory exists'
