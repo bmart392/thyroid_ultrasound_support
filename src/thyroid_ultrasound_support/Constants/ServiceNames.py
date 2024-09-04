@@ -43,9 +43,6 @@ RC_OVERRIDE_PATIENT_CONTACT: str = '/robot_control/overrides/patient_contact'
 
 RC_PUBLISH_CONTROLLER_STATUSES: str = '/robot_control/command/publish_controller_statuses'
 
-RC_SET_TRAJECTORY_PITCH: str = '/robot_control/command/set_pitch'
-RC_SET_TRAJECTORY_YAW: str = '/robot_control/command/set_yaw'
-RC_SET_NEXT_WAYPOINT: str = '/robot_control/command/set_next_waypoint'
 RC_SET_NEXT_FEATURE_WAYPOINT: str = '/robot_control/set_next_feature_waypoint'
 RC_CLEAR_CURRENT_SET_POINTS: str = '/robot_control/command/clear_current_set_points'
 

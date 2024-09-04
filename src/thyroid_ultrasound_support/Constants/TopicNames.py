@@ -42,9 +42,7 @@ RC_FORCE_CONTROL_GOAL_REACHED: str = '/force_control/goal_reached'
 
 # Robot control - position control information
 RC_POSITION_GOAL_SURFACE: str = '/position_control/goal_surface'
-RC_POSITION_GOAL_LIN_X_REACHED: str = '/position_control/goal_lin_x_reached'
-RC_POSITION_GOAL_ANG_Y_REACHED: str = '/position_control/goal_ang_y_reached'
-RC_POSITION_GOAL_ANG_Z_REACHED: str = '/position_control/goal_ang_z_reached'
+RC_POSITION_CONTROL_GOAL_REACHED: str = '/position_control/goal_reached'
 RC_POSITION_ERROR: str = '/position_control/error'
 
 # Robot control - image control information
