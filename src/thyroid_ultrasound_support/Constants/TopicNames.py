@@ -58,6 +58,7 @@ RC_IMAGE_BALANCE_GOAL_REACHED: str = '/patient_contact/goal_reached'
 RC_MANUAL_CONTROL_INPUT: str = '/manual_control_input'
 
 # Robot control - controller statuses
+RC_COMBINED_POSITION_CONTROLLER_STATUS: str = '/robot_control/controller_statuses/position/combined'
 RC_LINEAR_X_CONTROLLER_STATUS: str = '/robot_control/controller_statuses/linear/x'
 RC_LINEAR_Y_CONTROLLER_STATUS: str = '/robot_control/controller_statuses/linear/y'
 RC_LINEAR_Z_CONTROLLER_STATUS: str = '/robot_control/controller_statuses/linear/z'
