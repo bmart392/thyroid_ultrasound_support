@@ -6,7 +6,7 @@ Defines the names of topics used in the thyroid_ultrasound system.
 
 # Robot raw information
 ROBOT_STATE: str = '/franka_state_controller/franka_states'
-ARMER_STATE: str ='/arm/state'
+ARMER_STATE: str = '/arm/state'
 ROBOT_FORCE: str = '/franka_state_controller/F_ext'
 ROBOT_CONTROL_INPUT: str = '/arm/cartesian/velocity'
 

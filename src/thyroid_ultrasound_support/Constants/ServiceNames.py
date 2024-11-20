@@ -17,6 +17,7 @@ CS_IMAGE_STREAMING_CONTROL: str = '/image_streaming/image_streaming_control'
 CS_IMAGE_STREAMING_RESTART: str = '/image_streaming/restart_image_streaming'
 CS_IMAGE_STREAMING_REVERSE_PLAYBACK_DIRECTION: str = '/image_streaming/reverse_playback_direction'
 CS_IMAGE_STREAMING_SET_FREQUENCY: str = '/image_streaming/set_frequency'
+CS_APPLY_NEW_TIMESTAMP: str = '/image_streaming/apply_new_timestamp'
 
 # Image based user input
 IB_UI_CROP_IMAGE_FROM_POINTS: str = '/image_based_user_input/generate_new_image_cropping'
@@ -56,9 +57,9 @@ TM_OVERRIDE_IMAGE_BALANCED: str = '/trajectory_management/overrides/image_balanc
 TM_OVERRIDE_IMAGE_CENTERED: str = '/trajectory_management/overrides/image_centered'
 TM_OVERRIDE_DATA_REGISTERED: str = '/trajectory_management/overrides/data_registered'
 
-TM_CREATE_TRAJECTORY: str = '/trajectory_management/command/create'
+TM_INITIATE_SCAN: str = '/trajectory_management/command/initiate'
 TM_SET_TRAJECTORY_SPACING: str = '/trajectory_management/command/set_waypoint_spacing'
-TM_CLEAR_TRAJECTORY: str = '/trajectory_management/command/clear'
+TM_INTERRUPT_TRAJECTORY: str = '/trajectory_management/command/interrupt'
 TM_COMPLETE_TRAJECTORY_WITHOUT_DATA: str = '/trajectory_management/command/complete_trajectory_without_registering_data'
 
 TM_DATA_HAS_BEEN_REGISTERED: str = '/trajectory_management/data_has_been_registered'
@@ -75,7 +76,7 @@ IPR_SAVE_VALID_POSITIONS: str = '/image_position_registration/save_valid_positio
 IPR_RETRIEVE_VALID_DATA: str = '/image_position_registration/retrieve_valid_data'
 
 # User interface
-UI_TRAJECTORY_COMPLETE: str = '/user_interface/trajectory_complete'
+UI_SCANNING_COMPLETE: str = '/user_interface/scanning_complete'
 UI_USER_FINISH_SCAN: str = '/user_interface/user_finish_scan'
 
 # Non-real-time segmentation

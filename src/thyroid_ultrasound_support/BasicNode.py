@@ -56,7 +56,7 @@ class BasicNode:
         temp_msg.header.stamp = Time.now()
         self.logger.publish(temp_msg)
 
-    def publish_node_status(self, new_status: str,
+    def publish_node_status(self, new_status,
                             delay_publishing: float = None,
                             default_status: str = None):
         """
@@ -64,7 +64,7 @@ class BasicNode:
 
         Parameters
         ----------
-        new_status :
+        new_status : str or None
             The new status of the node that should be published.
         delay_publishing :
             The amount of time in seconds to delay before publishing the default status.
